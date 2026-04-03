@@ -5,8 +5,18 @@
     100% { rotate: 15deg; }
 }
 
+:root {
+    --text: #1f060e;
+    --background: #fceff3;
+    --primary: #d53569;
+    --secondary: #e9c794;
+    --accent: #ffccdd;
+}
+
 body {
     all: unset;
+    color: var(--text);
+    background-color: var(--background);
 }
 
 main {
@@ -23,4 +33,11 @@ img {
     rotate: 15deg;
     animation-duration: 0.5s;
     animation-iteration-count: 2;
+}
+
+#phrase {
+    background-color: var(--accent);
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 20px;
 }
